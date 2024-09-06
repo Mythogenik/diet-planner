@@ -1,35 +1,48 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from "react";
+import reactLogo from "./assets/react.svg";
+import viteLogo from "/vite.svg";
+import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <div className="page">
+        <div className="page-up">
+          <h1 className="title">Meal Planner</h1>
+        </div>
+        <div className="page-middle">
+          <p className="meal-title">Your Own Meal Plan</p>
+          <p>
+            {" "}
+            Welcome to your personalized meal planner! Our site is designed to
+            help you create balanced, delicious meal plans tailored to your
+            preferences, dietary needs, and goals.
+          </p>
+          <p>
+            We offer two specialized plans: one to help you lose weight through
+            calorie deficit and guided workouts, and another to support healthy
+            weight gain with nutrient-rich meals.
+          </p>
+          <p>
+            Whether you're looking to slim down, build muscle, or simply stay
+            organized, our platform makes meal planning easy and enjoyable for
+            every lifestyle.{" "}
+          </p>
+          <p> Let’s get started on your journey to a healthier you!</p>
+        </div>
+        <div className="page-down">
+          <div className="lose">
+
+          </div>
+          <div className="gain">
+
+          </div>
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
